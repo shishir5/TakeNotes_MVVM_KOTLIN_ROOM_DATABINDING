@@ -9,16 +9,23 @@ class NotesRepository(application: Application) {
 
     init {
         val notesDatabase: NotesDatabase = NotesDatabase.getInstance(application)
-        mNotesDao = notesDatabase.getNotesDao();
+        mNotesDao = notesDatabase.getNotesDao()
     }
 
     fun getAllNotes(): LiveData<List<NoteVO>> {
         return mNotesDao.getAllNotes()
     }
 
-    fun insertNote(note: NoteVO) {
-
+    fun getNoteById(id: Int): NoteVO {
+        return mNotesDao.getNoteByNoteId(id)
     }
 
+    fun insertNote(note: NoteVO) {
+        mNotesDao.insert(note)
+    }
+
+    fun updateNote(note: NoteVO){
+        mNotesDao.update(note)
+    }
 
 }
