@@ -1,10 +1,11 @@
-package com.shishir.takeNotesV2
+package com.shishir.takeNotesV2.noteDetails
 
 import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.shishir.takeNotesV2.R
 import com.shishir.takeNotesV2.databinding.ActivityNoteDetailsBinding
 import com.shishir.takeNotesV2.notesHome.NotesViewModel
 import com.shishir.takeNotesV2.pojo.NoteVO
@@ -55,7 +56,9 @@ class NoteDetailsActivity : AppCompatActivity(), View.OnClickListener {
     private fun saveNote() {
         val title: String = mBinding.etNoteTitle.text.toString()
         val note: String = mBinding.etNoteDetail.text.toString()
+
+        //Check if title and description are not null or empty
         if(ObjectUtils.isNotNull(title) && ObjectUtils.isNotNull(note))
-                mNotesViewModel.addNoteToDb(mNoteId, title, note)
+            mNotesViewModel.addNoteToDb(mNoteId, title, note)
     }
 }
