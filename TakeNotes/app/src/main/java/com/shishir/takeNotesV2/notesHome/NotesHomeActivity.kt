@@ -7,12 +7,10 @@ import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.view.View
-import com.shishir.takeNotesV2.NoteDetailsActivity
 import com.shishir.takeNotesV2.R
 import com.shishir.takeNotesV2.databinding.ActivityNotesHomeBinding
-import com.shishir.takeNotesV2.pojo.NoteVO
+import com.shishir.takeNotesV2.noteDetails.NoteDetailsActivity
 import com.shishir.takeNotesV2.util.IntentUtil
 
 class NotesHomeActivity : AppCompatActivity(), View.OnClickListener, NotesAdapter.INoteItemClickListener {
