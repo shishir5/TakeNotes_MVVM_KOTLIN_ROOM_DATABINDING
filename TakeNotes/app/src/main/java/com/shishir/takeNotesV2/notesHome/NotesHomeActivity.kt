@@ -1,13 +1,13 @@
 package com.shishir.takeNotesV2.notesHome
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
-import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.GridLayoutManager
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.GridLayoutManager
 import com.shishir.takeNotesV2.R
 import com.shishir.takeNotesV2.databinding.ActivityNotesHomeBinding
 import com.shishir.takeNotesV2.noteDetails.NoteDetailsActivity

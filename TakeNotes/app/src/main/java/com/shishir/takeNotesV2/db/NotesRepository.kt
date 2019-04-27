@@ -1,7 +1,7 @@
 package com.shishir.takeNotesV2.db
 
 import android.app.Application
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import com.shishir.takeNotesV2.pojo.NoteVO
 
 class NotesRepository(application: Application) {

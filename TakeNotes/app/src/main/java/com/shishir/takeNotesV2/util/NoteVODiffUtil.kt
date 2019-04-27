@@ -1,6 +1,6 @@
 package com.shishir.takeNotesV2.util
 
-import android.support.v7.util.DiffUtil
+import androidx.recyclerview.widget.DiffUtil
 import com.shishir.takeNotesV2.pojo.NoteVO
 
 class NoteVODiffUtil(val oldNotesList: List<NoteVO>, val newNotesList: List<NoteVO>) : DiffUtil.Callback() {

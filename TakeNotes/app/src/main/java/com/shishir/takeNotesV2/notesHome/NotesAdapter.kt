@@ -1,10 +1,10 @@
 package com.shishir.takeNotesV2.notesHome
 
-import android.support.v7.util.DiffUtil
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.RecyclerView
 import com.shishir.takeNotesV2.databinding.HomeNoteItemViewBinding
 import com.shishir.takeNotesV2.pojo.NoteVO
 import com.shishir.takeNotesV2.util.NoteVODiffUtil

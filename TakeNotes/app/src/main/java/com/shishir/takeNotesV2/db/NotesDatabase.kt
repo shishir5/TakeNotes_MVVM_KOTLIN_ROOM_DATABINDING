@@ -1,12 +1,12 @@
 package com.shishir.takeNotesV2.db
 
-import android.arch.persistence.room.Database
-import android.arch.persistence.room.Room
-import android.arch.persistence.room.RoomDatabase
 import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
 import com.shishir.takeNotesV2.pojo.NoteVO
 
-@Database(entities = arrayOf(NoteVO::class), version = 1)
+@Database(entities = [NoteVO::class], version = 1)
 abstract class NotesDatabase: RoomDatabase() {
 
     abstract fun getNotesDao(): NotesDao

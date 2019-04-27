@@ -1,7 +1,7 @@
 package com.shishir.takeNotesV2.pojo
 
-import android.arch.persistence.room.Entity
-import android.arch.persistence.room.PrimaryKey
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity
 data class NoteVO (var title: String, var note: String) {
