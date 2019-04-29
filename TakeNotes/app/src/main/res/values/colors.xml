@@ -4,4 +4,13 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#f49241</color>
     <color name="homeBackground">#f4d442</color>
+
+    //colors for color picker
+    <color name="blueLight">#99ccff</color>
+    <color name="yellowLight">#e6e600</color>
+    <color name="greenLight">#99ff66</color>
+    <color name="pink">#cc6699</color>
+    <color name="purpleLight">#cc99ff</color>
+    <color name="brown">#cc9900</color>
+
 </resources>

@@ -29,13 +29,13 @@ class NotesAdapter(var mlistener: INoteItemClickListener) : RecyclerView.Adapter
     }
 
     override fun onBindViewHolder(holder: NoteViewHolder, position: Int) {
-        val note: NoteVO = mNotesList.get(position)
+        val note: NoteVO = mNotesList[position]
         holder.setListner(mlistener)
         holder.bind(note)
 
     }
 
-    class NoteViewHolder(val binding: HomeNoteItemViewBinding) : RecyclerView.ViewHolder(binding.root), View.OnClickListener {
+    class NoteViewHolder(private val binding: HomeNoteItemViewBinding) : RecyclerView.ViewHolder(binding.root), View.OnClickListener {
         override fun onClick(v: View?) {
             mListner?.let {
                 mListner!!.onItemClick(v?.tag.toString().toInt())
